@@ -3,24 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ALPHA — Bimbingan Belajar Terdepan | www.bimbelALPHA.id</title>
+  <title>ALPHA — Bimbingan Belajar Terdepan | bimbelalpha.github.io</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
   <script>
     tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'sans-serif'] },
-        }
-      }
+      theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } }
     }
   </script>
 
@@ -39,8 +30,6 @@
     .animate-fade-up { animation: fadeUp 0.6s ease-out forwards; }
     .animate-delay-1 { animation-delay: 0.1s; opacity: 0; }
     .animate-delay-2 { animation-delay: 0.2s; opacity: 0; }
-    .animate-delay-3 { animation-delay: 0.3s; opacity: 0; }
-    .animate-delay-4 { animation-delay: 0.4s; opacity: 0; }
 
     @keyframes float {
       0%, 100% { transform: translateY(0); }
@@ -71,23 +60,18 @@
 
 <body class="bg-[#fafaf9] text-stone-800 font-sans antialiased">
 
-  <!-- ============================================= -->
   <!-- NAVIGATION -->
-  <!-- ============================================= -->
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 h-16 bg-white/80 backdrop-blur-md border-b border-stone-200/50 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-      <!-- Logo + Domain -->
-      <a href="#" class="flex items-center gap-2.5 group">
+      <a href="https://bimbelalpha.github.io/bimbelALPHA/" class="flex items-center gap-2.5 group">
         <div class="w-9 h-9 bg-stone-900 rounded-xl flex items-center justify-center group-hover:bg-stone-800 transition-colors duration-150">
           <span class="text-white font-semibold text-sm tracking-tight">A</span>
         </div>
         <div class="flex flex-col">
           <span class="text-lg font-semibold tracking-tight text-stone-900 leading-tight">ALPHA</span>
-          <span class="text-[10px] text-stone-400 leading-tight hidden sm:block">www.bimbelALPHA.id</span>
+          <span class="text-[10px] text-stone-400 leading-tight hidden sm:block">bimbelalpha.github.io</span>
         </div>
       </a>
-
-      <!-- Desktop Menu -->
       <div class="hidden md:flex items-center gap-8">
         <a href="#program" class="text-sm font-medium text-stone-500 hover:text-orange-800 transition-colors duration-150">Program</a>
         <a href="#keunggulan" class="text-sm font-medium text-stone-500 hover:text-orange-800 transition-colors duration-150">Keunggulan</a>
@@ -95,19 +79,11 @@
         <a href="#testimoni" class="text-sm font-medium text-stone-500 hover:text-orange-800 transition-colors duration-150">Testimoni</a>
         <a href="#faq" class="text-sm font-medium text-stone-500 hover:text-orange-800 transition-colors duration-150">FAQ</a>
       </div>
-
-      <!-- CTA + Mobile Toggle -->
       <div class="flex items-center gap-3">
-        <a href="#daftar" class="hidden md:inline-flex items-center px-6 py-2.5 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors duration-150 shadow-lg shadow-stone-900/10">
-          Daftar Sekarang
-        </a>
-        <button id="menuToggle" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-stone-100 transition-colors duration-150">
-          <i data-lucide="menu" class="w-5 h-5 text-stone-700"></i>
-        </button>
+        <a href="#daftar" class="hidden md:inline-flex items-center px-6 py-2.5 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors duration-150 shadow-lg shadow-stone-900/10">Daftar Sekarang</a>
+        <button id="menuToggle" class="md:hidden w-10 h-10 flex items-center justify-center rounded-full hover:bg-stone-100 transition-colors duration-150"><i data-lucide="menu" class="w-5 h-5 text-stone-700"></i></button>
       </div>
     </div>
-
-    <!-- Mobile Menu -->
     <div id="mobileMenu" class="md:hidden hidden bg-white border-b border-stone-200/50 shadow-lg">
       <div class="px-6 py-4 flex flex-col gap-3">
         <a href="#program" class="text-sm font-medium text-stone-600 hover:text-orange-800 py-2 transition-colors">Program</a>
@@ -116,9 +92,8 @@
         <a href="#testimoni" class="text-sm font-medium text-stone-600 hover:text-orange-800 py-2 transition-colors">Testimoni</a>
         <a href="#faq" class="text-sm font-medium text-stone-600 hover:text-orange-800 py-2 transition-colors">FAQ</a>
         <div class="border-t border-stone-100 pt-3 mt-1">
-          <a href="#" class="text-xs text-stone-400 flex items-center gap-1.5 mb-2">
-            <i data-lucide="globe" class="w-3 h-3"></i> www.bimbelALPHA.id
-          </a>
+          <a href="https://bimbelalpha.github.io/bimbelALPHA/" class="text-xs text-stone-400 flex items-center gap-1.5 mb-2"><i data-lucide="globe" class="w-3 h-3"></i> https://bimbelalpha.github.io/bimbelALPHA/</a>
+          <a href="tel:081534832006" class="text-xs text-stone-400 flex items-center gap-1.5"><i data-lucide="phone" class="w-3 h-3"></i> 081534832006</a>
         </div>
         <a href="#daftar" class="mt-1 inline-flex items-center justify-center px-6 py-2.5 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors">Daftar Sekarang</a>
       </div>
@@ -126,80 +101,45 @@
   </nav>
 
 
-  <!-- ============================================= -->
-  <!-- HERO SECTION -->
-  <!-- ============================================= -->
+  <!-- HERO -->
   <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-6">
     <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Text -->
       <div class="animate-fade-up">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-6">
           <span class="w-1.5 h-1.5 bg-orange-500 rounded-full animate-pulse-dot"></span>
           <span class="text-xs font-medium text-orange-800">Pendaftaran Batch Baru Dibuka</span>
         </div>
-
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-[1.1] text-stone-900 mb-4">
           Raih Prestasi<br>
           <span class="text-orange-700">Terbaikmu</span> Bersama<br>
           Bimbel ALPHA
         </h1>
-
-        <!-- Domain Highlight -->
         <div class="inline-flex items-center gap-2 bg-stone-900 rounded-full px-4 py-2 mb-6">
           <i data-lucide="globe" class="w-4 h-4 text-orange-400"></i>
-          <span class="domain-shimmer text-sm font-semibold tracking-wide">www.bimbelALPHA.id</span>
+          <span class="domain-shimmer text-sm font-semibold tracking-wide">bimbelalpha.github.io/bimbelALPHA</span>
         </div>
-
-        <p class="text-lg text-stone-500 leading-relaxed max-w-lg mb-8">
-          Metode belajar terstruktur, mentor berpengalaman, dan lingkungan yang mendukung. Persiapkan masa depan akademikmu sejak sekarang.
-        </p>
-
+        <p class="text-lg text-stone-500 leading-relaxed max-w-lg mb-8">Mentor berpengalaman 20 tahun, metode belajar terstruktur, dan lingkungan yang mendukung. Persiapkan masa depan akademikmu sejak sekarang.</p>
         <div class="flex flex-col sm:flex-row gap-3">
-          <a href="#daftar" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors duration-150 shadow-lg shadow-stone-900/10">
-            Mulai Belajar
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <a href="#program" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-white text-stone-700 text-sm font-medium rounded-full border border-stone-200/60 hover:bg-stone-50 hover:border-stone-300 transition-all duration-150">
-            Lihat Program
-          </a>
+          <a href="#daftar" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors duration-150 shadow-lg shadow-stone-900/10">Mulai Belajar <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          <a href="https://wa.me/6281534832006?text=Halo%20ALPHA%2C%20saya%20ingin%20bertanya%20tentang%20program%20bimbel" target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-emerald-600 text-white text-sm font-medium rounded-full hover:bg-emerald-700 transition-colors duration-150 shadow-lg shadow-emerald-600/20"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Kami</a>
         </div>
-
-        <!-- Mini Stats -->
         <div class="flex items-center gap-6 mt-10 pt-8 border-t border-stone-200/50">
-          <div>
-            <p class="text-2xl font-semibold text-stone-900">2.500+</p>
-            <p class="text-xs text-stone-500 mt-0.5">Siswa Aktif</p>
-          </div>
+          <div><p class="text-2xl font-semibold text-stone-900">2.500+</p><p class="text-xs text-stone-500 mt-0.5">Siswa Aktif</p></div>
           <div class="w-px h-10 bg-stone-200"></div>
-          <div>
-            <p class="text-2xl font-semibold text-stone-900">98%</p>
-            <p class="text-xs text-stone-500 mt-0.5">Tingkat Kepuasan</p>
-          </div>
+          <div><p class="text-2xl font-semibold text-stone-900">98%</p><p class="text-xs text-stone-500 mt-0.5">Tingkat Kepuasan</p></div>
           <div class="w-px h-10 bg-stone-200"></div>
-          <div>
-            <p class="text-2xl font-semibold text-stone-900">12th</p>
-            <p class="text-xs text-stone-500 mt-0.5">Pengalaman</p>
-          </div>
+          <div><p class="text-2xl font-semibold text-stone-900">20th</p><p class="text-xs text-stone-500 mt-0.5">Pengalaman</p></div>
         </div>
       </div>
-
-      <!-- Hero Image -->
       <div class="relative animate-fade-up animate-delay-2">
         <div class="absolute -inset-4 bg-orange-100/40 rounded-3xl rotate-2"></div>
         <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-stone-900/10 border border-stone-200/50">
           <img src="https://picsum.photos/seed/alpha-bimbel-hero/700/530.jpg" alt="Siswa ALPHA belajar" class="w-full h-[400px] lg:h-[530px] object-cover hover:scale-105 transition-transform duration-700 ease-out">
           <div class="absolute inset-0 bg-gradient-to-t from-stone-900/20 to-transparent"></div>
-
-          <!-- Floating Badge -->
           <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-3 shadow-lg animate-float">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center">
-                <i data-lucide="trending-up" class="w-5 h-5 text-emerald-600"></i>
-              </div>
-              <div>
-                <p class="text-xs font-medium text-stone-900">Rata-rata Naik</p>
-                <p class="text-lg font-semibold text-emerald-600">+25 Poin</p>
-              </div>
+              <div class="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center"><i data-lucide="trending-up" class="w-5 h-5 text-emerald-600"></i></div>
+              <div><p class="text-xs font-medium text-stone-900">Rata-rata Naik</p><p class="text-lg font-semibold text-emerald-600">+25 Poin</p></div>
             </div>
           </div>
         </div>
@@ -208,116 +148,42 @@
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- TRUSTED BY (Logo Bar) -->
-  <!-- ============================================= -->
+  <!-- TRUSTED BY -->
   <section class="py-12 px-6 border-y border-stone-200/50">
     <div class="max-w-7xl mx-auto">
       <p class="text-xs font-medium text-stone-400 uppercase tracking-wider text-center mb-8">Dipercaya siswa dari sekolah terbaik</p>
       <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
-        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors duration-150 cursor-default">SMA N 1 Jakarta</span>
-        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors duration-150 cursor-default">SMA N 3 Bandung</span>
-        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors duration-150 cursor-default">SMAK 1 BPK Penabur</span>
-        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors duration-150 cursor-default">SMA N 5 Surabaya</span>
-        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors duration-150 cursor-default">SMA Labschool</span>
+        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors cursor-default">SMA N 1 Jakarta</span>
+        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors cursor-default">SMA N 3 Bandung</span>
+        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors cursor-default">SMAK 1 BPK Penabur</span>
+        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors cursor-default">SMA N 5 Surabaya</span>
+        <span class="text-lg font-semibold text-stone-300 hover:text-stone-400 transition-colors cursor-default">SMA Labschool</span>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- PROGRAM SECTION -->
-  <!-- ============================================= -->
+  <!-- PROGRAM -->
   <section id="program" class="py-24 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4">
-          <span class="text-xs font-medium text-orange-800">Program Unggulan</span>
-        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">Program Unggulan</span></div>
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Pilih Program yang Tepat untukmu</h2>
         <p class="text-stone-500 leading-relaxed">Kami menyediakan berbagai program bimbingan yang disesuaikan dengan kebutuhan dan jenjang pendidikanmu.</p>
       </div>
-
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-100 transition-colors duration-150">
-            <i data-lucide="book-open" class="w-6 h-6 text-blue-600"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas SD</h3>
-          <p class="text-sm text-stone-500 leading-relaxed mb-4">Pondasi kuat untuk jenjang selanjutnya. Fokus pada literasi, numerasi, dan logika dasar.</p>
-          <div class="flex items-center gap-4 text-xs text-stone-400">
-            <span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 1–6</span>
-            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 3x/minggu</span>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-emerald-100 transition-colors duration-150">
-            <i data-lucide="graduation-cap" class="w-6 h-6 text-emerald-600"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas SMP</h3>
-          <p class="text-sm text-stone-500 leading-relaxed mb-4">Persiapan masuk SMA favorit. Materi intensif dan latihan soal berkala untuk menghadapi ujian.</p>
-          <div class="flex items-center gap-4 text-xs text-stone-400">
-            <span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 7–9</span>
-            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 4x/minggu</span>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-100 transition-colors duration-150">
-            <i data-lucide="trophy" class="w-6 h-6 text-orange-600"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas SMA</h3>
-          <p class="text-sm text-stone-500 leading-relaxed mb-4">Program reguler & intensif. Persiapan UTBK/SBMPTN dan ujian sekolah dengan simulasi lengkap.</p>
-          <div class="flex items-center gap-4 text-xs text-stone-400">
-            <span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 10–12</span>
-            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5x/minggu</span>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-amber-100 transition-colors duration-150">
-            <i data-lucide="target" class="w-6 h-6 text-amber-600"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas UTBK/SBMPTN</h3>
-          <p class="text-sm text-stone-500 leading-relaxed mb-4">Fokus 100% persiapan UTBK. Try out rutin, pembahasan mendalam, dan strategi menjawab soal.</p>
-          <div class="flex items-center gap-4 text-xs text-stone-400">
-            <span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 12</span>
-            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6x/minggu</span>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-purple-100 transition-colors duration-150">
-            <i data-lucide="laptop" class="w-6 h-6 text-purple-600"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas Online</h3>
-          <p class="text-sm text-stone-500 leading-relaxed mb-4">Belajar dari mana saja. Rekaman kelas bisa diakses kapanpun. Cocok untuk jadwal yang padat.</p>
-          <div class="flex items-center gap-4 text-xs text-stone-400">
-            <span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Semua Jenjang</span>
-            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Fleksibel</span>
-          </div>
-        </div>
-
-        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer">
-          <div class="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-rose-100 transition-colors duration-150">
-            <i data-lucide="user-check" class="w-6 h-6 text-rose-600"></i>
-          </div>
-          <h3 class="text-lg font-semibold text-stone-900 mb-2">Private / Tutor</h3>
-          <p class="text-sm text-stone-500 leading-relaxed mb-4">Belajar satu lawan satu dengan mentor pilihan. Program disesuaikan 100% dengan kebutuhanmu.</p>
-          <div class="flex items-center gap-4 text-xs text-stone-400">
-            <span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Personal</span>
-            <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Fleksibel</span>
-          </div>
-        </div>
+        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer"><div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-blue-100 transition-colors"><i data-lucide="book-open" class="w-6 h-6 text-blue-600"></i></div><h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas SD</h3><p class="text-sm text-stone-500 leading-relaxed mb-4">Pondasi kuat untuk jenjang selanjutnya. Fokus pada literasi, numerasi, dan logika dasar.</p><div class="flex items-center gap-4 text-xs text-stone-400"><span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 1–6</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 3x/minggu</span></div></div>
+        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer"><div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-emerald-100 transition-colors"><i data-lucide="graduation-cap" class="w-6 h-6 text-emerald-600"></i></div><h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas SMP</h3><p class="text-sm text-stone-500 leading-relaxed mb-4">Persiapan masuk SMA favorit. Materi intensif dan latihan soal berkala untuk menghadapi ujian.</p><div class="flex items-center gap-4 text-xs text-stone-400"><span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 7–9</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 4x/minggu</span></div></div>
+        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer"><div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-orange-100 transition-colors"><i data-lucide="trophy" class="w-6 h-6 text-orange-600"></i></div><h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas SMA</h3><p class="text-sm text-stone-500 leading-relaxed mb-4">Program reguler & intensif. Persiapan UTBK/SBMPTN dan ujian sekolah dengan simulasi lengkap.</p><div class="flex items-center gap-4 text-xs text-stone-400"><span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 10–12</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 5x/minggu</span></div></div>
+        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer"><div class="w-12 h-12 bg-amber-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-amber-100 transition-colors"><i data-lucide="target" class="w-6 h-6 text-amber-600"></i></div><h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas UTBK/SBMPTN</h3><p class="text-sm text-stone-500 leading-relaxed mb-4">Fokus 100% persiapan UTBK. Try out rutin, pembahasan mendalam, dan strategi menjawab soal.</p><div class="flex items-center gap-4 text-xs text-stone-400"><span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Kelas 12</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> 6x/minggu</span></div></div>
+        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer"><div class="w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-purple-100 transition-colors"><i data-lucide="laptop" class="w-6 h-6 text-purple-600"></i></div><h3 class="text-lg font-semibold text-stone-900 mb-2">Kelas Online</h3><p class="text-sm text-stone-500 leading-relaxed mb-4">Belajar dari mana saja. Rekaman kelas bisa diakses kapanpun. Cocok untuk jadwal yang padat.</p><div class="flex items-center gap-4 text-xs text-stone-400"><span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Semua Jenjang</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Fleksibel</span></div></div>
+        <div class="group bg-white border border-stone-200/60 rounded-2xl p-6 hover:shadow-md hover:border-stone-300 transition-all duration-300 cursor-pointer"><div class="w-12 h-12 bg-rose-50 rounded-xl flex items-center justify-center mb-5 group-hover:bg-rose-100 transition-colors"><i data-lucide="user-check" class="w-6 h-6 text-rose-600"></i></div><h3 class="text-lg font-semibold text-stone-900 mb-2">Private / Tutor</h3><p class="text-sm text-stone-500 leading-relaxed mb-4">Belajar satu lawan satu dengan mentor pilihan. Program disesuaikan 100% dengan kebutuhanmu.</p><div class="flex items-center gap-4 text-xs text-stone-400"><span class="flex items-center gap-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Personal</span><span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Fleksibel</span></div></div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- KEUNGGULAN SECTION -->
-  <!-- ============================================= -->
+  <!-- KEUNGGULAN -->
   <section id="keunggulan" class="py-24 px-6 bg-white">
     <div class="max-w-7xl mx-auto">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -326,63 +192,22 @@
           <div class="relative rounded-2xl overflow-hidden shadow-lg border border-stone-200/50">
             <img src="https://picsum.photos/seed/alpha-classroom/640/480.jpg" alt="Ruang kelas ALPHA" class="w-full h-[360px] lg:h-[480px] object-cover hover:scale-105 transition-transform duration-700 ease-out">
           </div>
-          <div class="absolute -bottom-6 -right-4 lg:-right-8 bg-white rounded-xl px-5 py-4 shadow-xl border border-stone-200/50 animate-float" style="animation-delay: 1s;">
+          <div class="absolute -bottom-6 -right-4 lg:-right-8 bg-white rounded-xl px-5 py-4 shadow-xl border border-stone-200/50 animate-float" style="animation-delay:1s">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center">
-                <i data-lucide="award" class="w-5 h-5 text-orange-600"></i>
-              </div>
-              <div>
-                <p class="text-sm font-semibold text-stone-900">Akreditasi A</p>
-                <p class="text-xs text-stone-400">Lembaga Bimbingan Resmi</p>
-              </div>
+              <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center"><i data-lucide="award" class="w-5 h-5 text-orange-600"></i></div>
+              <div><p class="text-sm font-semibold text-stone-900">20 Tahun</p><p class="text-xs text-stone-400">Pengalaman Mengajar</p></div>
             </div>
           </div>
         </div>
-
         <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4">
-            <span class="text-xs font-medium text-orange-800">Mengapa ALPHA?</span>
-          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">Mengapa ALPHA?</span></div>
           <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Keunggulan yang Membuat Kami Berbeda</h2>
           <p class="text-stone-500 leading-relaxed mb-10">Kami tidak hanya mengajar, tapi juga membentuk kebiasaan belajar yang tepat dan mindset sukses untuk setiap siswa.</p>
-
           <div class="space-y-6">
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center mt-0.5">
-                <i data-lucide="brain" class="w-5 h-5 text-emerald-600"></i>
-              </div>
-              <div>
-                <h3 class="text-base font-semibold text-stone-900 mb-1">Metode Cerdas & Teruji</h3>
-                <p class="text-sm text-stone-500 leading-relaxed">Pendekatan scientifically-backed learning yang terbukti meningkatkan pemahaman dan daya ingat siswa.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mt-0.5">
-                <i data-lucide="bar-chart-3" class="w-5 h-5 text-blue-600"></i>
-              </div>
-              <div>
-                <h3 class="text-base font-semibold text-stone-900 mb-1">Monitoring Berkala</h3>
-                <p class="text-sm text-stone-500 leading-relaxed">Laporan perkembangan bulanan dikirim ke orang tua. Kamu tahu persis di mana posisimu.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mt-0.5">
-                <i data-lucide="users" class="w-5 h-5 text-orange-600"></i>
-              </div>
-              <div>
-                <h3 class="text-base font-semibold text-stone-900 mb-1">Kelas Kecil, Fokus Tinggi</h3>
-                <p class="text-sm text-stone-500 leading-relaxed">Maksimal 8 siswa per kelas. Mentor bisa memberikan perhatian lebih ke setiap individu.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="flex-shrink-0 w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center mt-0.5">
-                <i data-lucide="clipboard-check" class="w-5 h-5 text-amber-600"></i>
-              </div>
-              <div>
-                <h3 class="text-base font-semibold text-stone-900 mb-1">Try Out & Evaluasi Rutin</h3>
-                <p class="text-sm text-stone-500 leading-relaxed">Try out mingguan dan bulanan dengan standar nasional. Soal selalu di-update mengikuti tren terbaru.</p>
-              </div>
-            </div>
+            <div class="flex gap-4"><div class="flex-shrink-0 w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center mt-0.5"><i data-lucide="brain" class="w-5 h-5 text-emerald-600"></i></div><div><h3 class="text-base font-semibold text-stone-900 mb-1">Metode Cerdas & Teruji</h3><p class="text-sm text-stone-500 leading-relaxed">Pendekatan scientifically-backed learning yang terbukti meningkatkan pemahaman dan daya ingat siswa.</p></div></div>
+            <div class="flex gap-4"><div class="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mt-0.5"><i data-lucide="bar-chart-3" class="w-5 h-5 text-blue-600"></i></div><div><h3 class="text-base font-semibold text-stone-900 mb-1">Monitoring Berkala</h3><p class="text-sm text-stone-500 leading-relaxed">Laporan perkembangan bulanan dikirim ke orang tua. Kamu tahu persis di mana posisimu.</p></div></div>
+            <div class="flex gap-4"><div class="flex-shrink-0 w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mt-0.5"><i data-lucide="users" class="w-5 h-5 text-orange-600"></i></div><div><h3 class="text-base font-semibold text-stone-900 mb-1">Kelas Kecil, Fokus Tinggi</h3><p class="text-sm text-stone-500 leading-relaxed">Maksimal 8 siswa per kelas. Mentor bisa memberikan perhatian lebih ke setiap individu.</p></div></div>
+            <div class="flex gap-4"><div class="flex-shrink-0 w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center mt-0.5"><i data-lucide="clipboard-check" class="w-5 h-5 text-amber-600"></i></div><div><h3 class="text-base font-semibold text-stone-900 mb-1">Try Out & Evaluasi Rutin</h3><p class="text-sm text-stone-500 leading-relaxed">Try out mingguan dan bulanan dengan standar nasional. Soal selalu di-update mengikuti tren terbaru.</p></div></div>
           </div>
         </div>
       </div>
@@ -390,449 +215,166 @@
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- STATS SECTION -->
-  <!-- ============================================= -->
+  <!-- STATS -->
   <section class="py-20 px-6 bg-stone-900">
     <div class="max-w-7xl mx-auto">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-        <div class="text-center">
-          <p class="text-4xl lg:text-5xl font-semibold text-white mb-2">2.500+</p>
-          <p class="text-sm text-stone-400">Siswa Terdaftar</p>
-        </div>
-        <div class="text-center">
-          <p class="text-4xl lg:text-5xl font-semibold text-white mb-2">150+</p>
-          <p class="text-sm text-stone-400">Mentor Profesional</p>
-        </div>
-        <div class="text-center">
-          <p class="text-4xl lg:text-5xl font-semibold text-white mb-2">95%</p>
-          <p class="text-sm text-stone-400">Lulus PTN Favorit</p>
-        </div>
-        <div class="text-center">
-          <p class="text-4xl lg:text-5xl font-semibold text-white mb-2">12</p>
-          <p class="text-sm text-stone-400">Tahun Pengalaman</p>
-        </div>
+        <div class="text-center"><p class="text-4xl lg:text-5xl font-semibold text-white mb-2">2.500+</p><p class="text-sm text-stone-400">Siswa Terdaftar</p></div>
+        <div class="text-center"><p class="text-4xl lg:text-5xl font-semibold text-white mb-2">2</p><p class="text-sm text-stone-400">Mentor Ahli</p></div>
+        <div class="text-center"><p class="text-4xl lg:text-5xl font-semibold text-white mb-2">95%</p><p class="text-sm text-stone-400">Lulus PTN Favorit</p></div>
+        <div class="text-center"><p class="text-4xl lg:text-5xl font-semibold text-white mb-2">20</p><p class="text-sm text-stone-400">Tahun Pengalaman</p></div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- MENTOR SECTION -->
-  <!-- ============================================= -->
+  <!-- MENTOR -->
   <section id="mentor" class="py-24 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4">
-          <span class="text-xs font-medium text-orange-800">Tim Kami</span>
-        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">Tim Kami</span></div>
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Mentor Berpengalaman & Terpilih</h2>
-        <p class="text-stone-500 leading-relaxed">Setiap mentor kami adalah lulusan terbaik dari PTN ternama dengan passion mengajar yang tinggi.</p>
+        <p class="text-stone-500 leading-relaxed">Dengan pengalaman masing-masing 20 tahun, kedua mentor kami telah meluluskan ribuan siswa ke PTN ternama di Indonesia.</p>
       </div>
+      <div class="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Mentor 1: Robertus — Fisika & Kimia -->
         <div class="group bg-white border border-stone-200/60 rounded-2xl overflow-hidden hover:shadow-md hover:border-stone-300 transition-all duration-300">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://picsum.photos/seed/mentor-pak-andi/400/500.jpg" alt="Pak Andi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img src="https://picsum.photos/seed/mentor-robertus-dwiyatmoko/500/625.jpg" alt="Robertus Dwiyatmoko Priyogo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+            <div class="absolute top-3 right-3 bg-orange-700 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full">Founder</div>
           </div>
-          <div class="p-5">
-            <h3 class="text-base font-semibold text-stone-900">Pak Andi Pratama</h3>
-            <p class="text-sm text-orange-700 font-medium mt-0.5">Matematika</p>
-            <p class="text-xs text-stone-400 mt-2">Lulusan UI • 8 tahun mengajar</p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-stone-900">Robertus Dwiyatmoko Priyogo</h3>
+            <p class="text-sm text-orange-700 font-medium mt-1">Fisika & Kimia</p>
+            <p class="text-xs text-stone-400 mt-3 leading-relaxed">Berpengalaman mengajar selama <strong class="text-stone-600">20 tahun</strong>. Telah membimbing ribuan siswa lolos PTN favorit seperti UI, ITB, UGM, dan lainnya.</p>
+            <div class="flex items-center gap-4 mt-4 pt-4 border-t border-stone-100">
+              <div class="flex items-center gap-1.5 text-xs text-stone-400"><i data-lucide="award" class="w-3.5 h-3.5 text-orange-500"></i><span>20 Tahun</span></div>
+              <div class="flex items-center gap-1.5 text-xs text-stone-400"><i data-lucide="users" class="w-3.5 h-3.5 text-orange-500"></i><span>2.000+ Siswa</span></div>
+            </div>
           </div>
         </div>
+
+        <!-- Mentor 2: Yohana — Matematika & Biologi -->
         <div class="group bg-white border border-stone-200/60 rounded-2xl overflow-hidden hover:shadow-md hover:border-stone-300 transition-all duration-300">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://picsum.photos/seed/mentor-bu-sari/400/500.jpg" alt="Bu Sari" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+          <div class="aspect-[4/5] overflow-hidden relative">
+            <img src="https://picsum.photos/seed/mentor-yohana-fransiska/500/625.jpg" alt="Yohana Fransiska Kuswarini" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+            <div class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full">Co-Founder</div>
           </div>
-          <div class="p-5">
-            <h3 class="text-base font-semibold text-stone-900">Bu Sari Dewi</h3>
-            <p class="text-sm text-orange-700 font-medium mt-0.5">Fisika</p>
-            <p class="text-xs text-stone-400 mt-2">Lulusan ITB • 6 tahun mengajar</p>
+          <div class="p-6">
+            <h3 class="text-lg font-semibold text-stone-900">Yohana Fransiska Kuswarini</h3>
+            <p class="text-sm text-orange-700 font-medium mt-1">Matematika & Biologi (IPA)</p>
+            <p class="text-xs text-stone-400 mt-3 leading-relaxed">Berpengalaman mengajar selama <strong class="text-stone-600">20 tahun</strong>. Ahli dalam strategi menjawab soal UTBK dan pembelajaran berbasis pemahaman konsep.</p>
+            <div class="flex items-center gap-4 mt-4 pt-4 border-t border-stone-100">
+              <div class="flex items-center gap-1.5 text-xs text-stone-400"><i data-lucide="award" class="w-3.5 h-3.5 text-orange-500"></i><span>20 Tahun</span></div>
+              <div class="flex items-center gap-1.5 text-xs text-stone-400"><i data-lucide="users" class="w-3.5 h-3.5 text-orange-500"></i><span>1.800+ Siswa</span></div>
+            </div>
           </div>
         </div>
-        <div class="group bg-white border border-stone-200/60 rounded-2xl overflow-hidden hover:shadow-md hover:border-stone-300 transition-all duration-300">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://picsum.photos/seed/mentor-pak-rizki/400/500.jpg" alt="Pak Rizki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
-          </div>
-          <div class="p-5">
-            <h3 class="text-base font-semibold text-stone-900">Pak Rizki Fauzan</h3>
-            <p class="text-sm text-orange-700 font-medium mt-0.5">Kimia</p>
-            <p class="text-xs text-stone-400 mt-2">Lulusan UGM • 7 tahun mengajar</p>
-          </div>
-        </div>
-        <div class="group bg-white border border-stone-200/60 rounded-2xl overflow-hidden hover:shadow-md hover:border-stone-300 transition-all duration-300">
-          <div class="aspect-[4/5] overflow-hidden">
-            <img src="https://picsum.photos/seed/mentor-bu-maya/400/500.jpg" alt="Bu Maya" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
-          </div>
-          <div class="p-5">
-            <h3 class="text-base font-semibold text-stone-900">Bu Maya Anggraeni</h3>
-            <p class="text-sm text-orange-700 font-medium mt-0.5">Biologi</p>
-            <p class="text-xs text-stone-400 mt-2">Lulusan Unair • 5 tahun mengajar</p>
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- TESTIMONI SECTION -->
-  <!-- ============================================= -->
+  <!-- TESTIMONI -->
   <section id="testimoni" class="py-24 px-6 bg-white">
     <div class="max-w-7xl mx-auto">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4">
-          <span class="text-xs font-medium text-orange-800">Testimoni</span>
-        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">Testimoni</span></div>
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Apa Kata Mereka?</h2>
         <p class="text-stone-500 leading-relaxed">Cerita nyata dari siswa dan orang tua yang telah merasakan manfaat belajar di ALPHA.</p>
       </div>
-
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-          </div>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">"Nilai matematika saya naik dari 45 ke 85 dalam 3 bulan! Metode belajarnya mudah dipahami dan Pak Andi sangat sabar menjelaskan."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden">
-              <img src="https://picsum.photos/seed/student-nadia/80/80.jpg" alt="Nadia" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-stone-900">Nadia Azzahra</p>
-              <p class="text-xs text-stone-400">Siswa Kelas 12 IPA</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-          </div>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">"Sebagai orang tua, saya merasa tenang karena ada laporan berkala. Anak saya jadi lebih disiplin belajar dan percaya diri menghadapi ujian."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden">
-              <img src="https://picsum.photos/seed/parent-budi/80/80.jpg" alt="Bapak Budi" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-stone-900">Bapak Budi Santoso</p>
-              <p class="text-xs text-stone-400">Orang Tua Siswa</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-          </div>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">"Alhamdulillah diterima di UI lewat jalur SBMPTN. Try out di ALPHA sangat mirip dengan soal aslinya. Terima kasih ALPHA!"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden">
-              <img src="https://picsum.photos/seed/student-reza/80/80.jpg" alt="Reza" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-stone-900">Reza Mahendra</p>
-              <p class="text-xs text-stone-400">Alumni • Mahasiswa UI</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-          </div>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">"Kelas kecilnya benar-benar bikin fokus. Mentornya bisa ngerti karakter belajar tiap siswa. Recommended banget!"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden">
-              <img src="https://picsum.photos/seed/student-kirana/80/80.jpg" alt="Kirana" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-stone-900">Kirana Putri</p>
-              <p class="text-xs text-stone-400">Siswa Kelas 11 IPA</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-          </div>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">"Anak saya yang dulu malas belajar sekarang jadi rajin. Lingkungan belajar di ALPHA sangat positif dan menyenangkan."</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden">
-              <img src="https://picsum.photos/seed/parent-ira/80/80.jpg" alt="Ibu Ira" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-stone-900">Ibu Ira Wulandari</p>
-              <p class="text-xs text-stone-400">Orang Tua Siswa SD</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6">
-          <div class="flex gap-1 mb-4">
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
-          </div>
-          <p class="text-sm text-stone-600 leading-relaxed mb-6">"Program online-nya sangat membantu karena saya di luar kota. Rekaman kelas bisa diulang berkali-kali. Sangat worth it!"</p>
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden">
-              <img src="https://picsum.photos/seed/student-fajar/80/80.jpg" alt="Fajar" class="w-full h-full object-cover">
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-stone-900">Fajar Rahman</p>
-              <p class="text-xs text-stone-400">Siswa Kelas Online</p>
-            </div>
-          </div>
-        </div>
+        <!-- Testimoni 1 — Robertus / Fisika -->
+        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6"><div class="flex gap-1 mb-4"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i></div><p class="text-sm text-stone-600 leading-relaxed mb-6">"Pak Robertus benar-benar master dalam menjelaskan fisika. Dari yang awalnya saya bingung soal gerak parabola, sekarang jadi paham dan nilai saya naik drastis!"</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden"><img src="https://picsum.photos/seed/student-nadia/80/80.jpg" alt="Nadia" class="w-full h-full object-cover"></div><div><p class="text-sm font-semibold text-stone-900">Nadia Azzahra</p><p class="text-xs text-stone-400">Siswa Kelas 12 IPA</p></div></div></div>
+        <!-- Testimoni 2 — Yohana / Matematika -->
+        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6"><div class="flex gap-1 mb-4"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i></div><p class="text-sm text-stone-600 leading-relaxed mb-6">"Bu Yohana mengajarkan matematika dengan cara yang sangat menyenangkan. Saya yang dulunya kesulitan soal limit, sekarang jadi justru ketagihan belajar!"</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden"><img src="https://picsum.photos/seed/student-dina/80/80.jpg" alt="Dina" class="w-full h-full object-cover"></div><div><p class="text-sm font-semibold text-stone-900">Dina Maulida</p><p class="text-xs text-stone-400">Siswa Kelas 12 IPA</p></div></div></div>
+        <!-- Testimoni 3 — Keduanya -->
+        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6"><div class="flex gap-1 mb-4"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i></div><p class="text-sm text-stone-600 leading-relaxed mb-6">"Alhamdulillah diterima di UI lewat jalur SBMPTN. Try out di ALPHA sangat mirip dengan soal aslinya. Terima kasih Pak Robertus & Bu Yohana!"</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden"><img src="https://picsum.photos/seed/student-reza/80/80.jpg" alt="Reza" class="w-full h-full object-cover"></div><div><p class="text-sm font-semibold text-stone-900">Reza Mahendra</p><p class="text-xs text-stone-400">Alumni • Mahasiswa UI</p></div></div></div>
+        <!-- Testimoni 4 -->
+        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6"><div class="flex gap-1 mb-4"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i></div><p class="text-sm text-stone-600 leading-relaxed mb-6">"Kelas kecilnya benar-benar bikin fokus. Mentornya bisa ngerti karakter belajar tiap siswa. Recommended!"</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden"><img src="https://picsum.photos/seed/student-kirana/80/80.jpg" alt="Kirana" class="w-full h-full object-cover"></div><div><p class="text-sm font-semibold text-stone-900">Kirana Putri</p><p class="text-xs text-stone-400">Siswa Kelas 11 IPA</p></div></div></div>
+        <!-- Testimoni 5 — Yohana / Biologi -->
+        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6"><div class="flex gap-1 mb-4"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i></div><p class="text-sm text-stone-600 leading-relaxed mb-6">"Anak saya yang dulu malas belajar sekarang jadi rajin. Bu Yohana sabar sekali mengajarkan biologi sampai anak paham. Lingkungan belajarnya sangat positif."</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden"><img src="https://picsum.photos/seed/parent-ira/80/80.jpg" alt="Ibu Ira" class="w-full h-full object-cover"></div><div><p class="text-sm font-semibold text-stone-900">Ibu Ira Wulandari</p><p class="text-xs text-stone-400">Orang Tua Siswa SMA</p></div></div></div>
+        <!-- Testimoni 6 -->
+        <div class="bg-[#fafaf9] border border-stone-200/60 rounded-2xl p-6"><div class="flex gap-1 mb-4"><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i></div><p class="text-sm text-stone-600 leading-relaxed mb-6">"Program online-nya sangat membantu karena saya di luar kota. Rekaman kelas bisa diulang berkali-kali!"</p><div class="flex items-center gap-3"><div class="w-10 h-10 bg-stone-200 rounded-full overflow-hidden"><img src="https://picsum.photos/seed/student-fajar/80/80.jpg" alt="Fajar" class="w-full h-full object-cover"></div><div><p class="text-sm font-semibold text-stone-900">Fajar Rahman</p><p class="text-xs text-stone-400">Siswa Kelas Online</p></div></div></div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- ALUR BELAJAR (Timeline) -->
-  <!-- ============================================= -->
+  <!-- ALUR BELAJAR -->
   <section class="py-24 px-6">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4">
-          <span class="text-xs font-medium text-orange-800">Cara Mulai</span>
-        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">Cara Mulai</span></div>
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Alur Pendaftaran</h2>
         <p class="text-stone-500 leading-relaxed">Empat langkah mudah untuk memulai perjalanan belajarmu di ALPHA.</p>
       </div>
-
       <div class="relative">
         <div class="absolute left-6 top-0 bottom-0 w-px bg-stone-200"></div>
-        <div class="relative flex gap-6 pb-12">
-          <div class="flex-shrink-0 w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">1</div>
-          <div class="pt-1">
-            <h3 class="text-base font-semibold text-stone-900 mb-1">Konsultasi Gratis</h3>
-            <p class="text-sm text-stone-500 leading-relaxed">Hubungi kami via WhatsApp atau kunjungi <strong class="text-stone-700">www.bimbelALPHA.id</strong> untuk konsultasi awal dan penentuan program yang tepat.</p>
-          </div>
-        </div>
-        <div class="relative flex gap-6 pb-12">
-          <div class="flex-shrink-0 w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">2</div>
-          <div class="pt-1">
-            <h3 class="text-base font-semibold text-stone-900 mb-1">Tes Penempatan</h3>
-            <p class="text-sm text-stone-500 leading-relaxed">Ikuti tes diagnostik singkat untuk mengetahui level pemahamanmu saat ini. Hasilnya jadi acuan pembelajaran.</p>
-          </div>
-        </div>
-        <div class="relative flex gap-6 pb-12">
-          <div class="flex-shrink-0 w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">3</div>
-          <div class="pt-1">
-            <h3 class="text-base font-semibold text-stone-900 mb-1">Pilih Jadwal & Daftar</h3>
-            <p class="text-sm text-stone-500 leading-relaxed">Pilih jadwal kelas yang sesuai, lengkapi administrasi, dan pembayaran bisa dicicil tanpa bunga.</p>
-          </div>
-        </div>
-        <div class="relative flex gap-6">
-          <div class="flex-shrink-0 w-12 h-12 bg-orange-700 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">4</div>
-          <div class="pt-1">
-            <h3 class="text-base font-semibold text-stone-900 mb-1">Mulai Belajar!</h3>
-            <p class="text-sm text-stone-500 leading-relaxed">Masuk kelas, dapatkan modul belajar, dan mulai perjalanan menuju prestasi terbaikmu bersama ALPHA.</p>
-          </div>
-        </div>
+        <div class="relative flex gap-6 pb-12"><div class="flex-shrink-0 w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">1</div><div class="pt-1"><h3 class="text-base font-semibold text-stone-900 mb-1">Konsultasi Gratis</h3><p class="text-sm text-stone-500 leading-relaxed">Hubungi kami via WhatsApp ke <strong class="text-stone-700">081534832006</strong> atau kunjungi langsung ke kampus kami di Cipondoh, Tangerang.</p></div></div>
+        <div class="relative flex gap-6 pb-12"><div class="flex-shrink-0 w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">2</div><div class="pt-1"><h3 class="text-base font-semibold text-stone-900 mb-1">Tes Penempatan</h3><p class="text-sm text-stone-500 leading-relaxed">Ikuti tes diagnostik singkat untuk mengetahui level pemahamanmu saat ini.</p></div></div>
+        <div class="relative flex gap-6 pb-12"><div class="flex-shrink-0 w-12 h-12 bg-stone-900 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">3</div><div class="pt-1"><h3 class="text-base font-semibold text-stone-900 mb-1">Pilih Jadwal & Daftar</h3><p class="text-sm text-stone-500 leading-relaxed">Pilih jadwal kelas yang sesuai, lengkapi administrasi, dan pembayaran bisa dicicil tanpa bunga.</p></div></div>
+        <div class="relative flex gap-6"><div class="flex-shrink-0 w-12 h-12 bg-orange-700 rounded-full flex items-center justify-center text-white text-sm font-semibold z-10">4</div><div class="pt-1"><h3 class="text-base font-semibold text-stone-900 mb-1">Mulai Belajar!</h3><p class="text-sm text-stone-500 leading-relaxed">Masuk kelas, dapatkan modul belajar, dan mulai perjalanan menuju prestasi terbaikmu bersama ALPHA.</p></div></div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- FAQ SECTION -->
-  <!-- ============================================= -->
+  <!-- FAQ -->
   <section id="faq" class="py-24 px-6 bg-white">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16">
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4">
-          <span class="text-xs font-medium text-orange-800">FAQ</span>
-        </div>
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">FAQ</span></div>
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Pertanyaan yang Sering Ditanyakan</h2>
-        <p class="text-stone-500 leading-relaxed">Belum menemukan jawaban? Hubungi kami langsung via WhatsApp.</p>
+        <p class="text-stone-500 leading-relaxed">Belum menemukan jawaban? Hubungi <a href="tel:081534832006" class="text-orange-700 hover:text-orange-800 font-medium">081534832006</a> via telepon atau WhatsApp.</p>
       </div>
-
-      <div class="space-y-3" id="faqContainer">
-        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
-            <span class="text-sm font-semibold text-stone-900">Berapa biaya bimbingan di ALPHA?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-4">
-            <p class="text-sm text-stone-500 leading-relaxed">Biaya bervariasi tergantung program dan jenjang. Mulai dari Rp 350.000/bulan untuk kelas reguler. Kami juga menyediakan opsi cicilan 0% dan beasiswa untuk siswa berprestasi. Cek info lengkap di <strong class="text-stone-700">www.bimbelALPHA.id</strong> atau hubungi admin.</p>
-          </div>
-        </div>
-        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
-            <span class="text-sm font-semibold text-stone-900">Apakah ada kelas trial sebelum mendaftar?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-4">
-            <p class="text-sm text-stone-500 leading-relaxed">Ya! Kami menyediakan 1 sesi kelas trial gratis untuk setiap calon siswa. Kamu bisa merasakan langsung suasana belajar dan metode mengajar mentor kami sebelum memutuskan.</p>
-          </div>
-        </div>
-        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
-            <span class="text-sm font-semibold text-stone-900">Berapa jumlah siswa dalam satu kelas?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-4">
-            <p class="text-sm text-stone-500 leading-relaxed">Kelas reguler kami maksimal 8 siswa. Untuk kelas private, hanya 1 siswa per sesi. Kami menjaga jumlah siswa tetap kecil agar mentor bisa memberikan perhatian optimal.</p>
-          </div>
-        </div>
-        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
-            <span class="text-sm font-semibold text-stone-900">Bagaimana jika saya tidak bisa hadir di jadwal kelas?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-4">
-            <p class="text-sm text-stone-500 leading-relaxed">Tidak perlu khawatir! Setiap sesi kelas direkam dan bisa diakses kapan saja melalui platform kami. Kamu juga bisa mengatur jadwal make-up class dengan admin.</p>
-          </div>
-        </div>
-        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
-            <span class="text-sm font-semibold text-stone-900">Di mana saja lokasi cabang ALPHA?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-4">
-            <p class="text-sm text-stone-500 leading-relaxed">Saat ini ALPHA memiliki 5 cabang: Jakarta Selatan, Jakarta Timur, Bandung, Surabaya, dan Yogyakarta. Program online bisa diakses dari seluruh Indonesia. Info lokasi lengkap di <strong class="text-stone-700">www.bimbelALPHA.id</strong>.</p>
-          </div>
-        </div>
-        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden">
-          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)">
-            <span class="text-sm font-semibold text-stone-900">Apakah ada garansi hasil?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-4">
-            <p class="text-sm text-stone-500 leading-relaxed">Untuk program UTBK/SBMPTN, kami memberikan garansi uang kembali jika siswa tidak lolos seleksi dengan syarat kehadiran minimal 90% dan mengikuti semua evaluasi. Ketentuan lengkap bisa ditanyakan ke admin.</p>
-          </div>
-        </div>
+      <div class="space-y-3">
+        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden"><button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)"><span class="text-sm font-semibold text-stone-900">Berapa biaya bimbingan di ALPHA?</span><i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i></button><div class="faq-content hidden px-6 pb-4"><p class="text-sm text-stone-500 leading-relaxed">Mulai dari Rp 350.000/bulan. Hubungi kami di <strong class="text-stone-700">081534832006</strong> untuk penawaran terbaik.</p></div></div>
+        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden"><button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)"><span class="text-sm font-semibold text-stone-900">Apakah ada kelas trial sebelum mendaftar?</span><i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i></button><div class="faq-content hidden px-6 pb-4"><p class="text-sm text-stone-500 leading-relaxed">Ya! Kami menyediakan 1 sesi kelas trial gratis untuk setiap calon siswa.</p></div></div>
+        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden"><button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)"><span class="text-sm font-semibold text-stone-900">Berapa jumlah siswa dalam satu kelas?</span><i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i></button><div class="faq-content hidden px-6 pb-4"><p class="text-sm text-stone-500 leading-relaxed">Kelas reguler maksimal 8 siswa. Private hanya 1 siswa per sesi.</p></div></div>
+        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden"><button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)"><span class="text-sm font-semibold text-stone-900">Bagaimana jika tidak bisa hadir di jadwal kelas?</span><i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i></button><div class="faq-content hidden px-6 pb-4"><p class="text-sm text-stone-500 leading-relaxed">Setiap sesi direkam dan bisa diakses kapan saja. Kamu juga bisa mengatur make-up class.</p></div></div>
+        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden"><button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)"><span class="text-sm font-semibold text-stone-900">Di mana lokasi ALPHA?</span><i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i></button><div class="faq-content hidden px-6 pb-4"><p class="text-sm text-stone-500 leading-relaxed">Kampus kami berlokasi di <strong class="text-stone-700">Jl. Pulo Indah Permai VI No 182, Petir, Cipondoh, Tangerang.</strong> Program online bisa diakses dari seluruh Indonesia.</p></div></div>
+        <div class="faq-item bg-[#fafaf9] border border-stone-200/60 rounded-xl overflow-hidden"><button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left" onclick="toggleFaq(this)"><span class="text-sm font-semibold text-stone-900">Siapa mentor di ALPHA?</span><i data-lucide="chevron-down" class="w-5 h-5 text-stone-400 transition-transform duration-200 faq-icon"></i></button><div class="faq-content hidden px-6 pb-4"><p class="text-sm text-stone-500 leading-relaxed">Kami memiliki 2 mentor utama: <strong class="text-stone-700">Robertus Dwiyatmoko Priyogo</strong> (Fisika & Kimia) dan <strong class="text-stone-700">Yohana Fransiska Kuswarini</strong> (Matematika & Biologi IPA). Keduanya berpengalaman 20 tahun.</p></div></div>
       </div>
     </div>
   </section>
 
 
-  <!-- ============================================= -->
-  <!-- CTA / DAFTAR SECTION -->
-  <!-- ============================================= -->
+  <!-- CTA / DAFTAR -->
   <section id="daftar" class="py-24 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="relative bg-stone-900 rounded-3xl overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-          <div class="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div>
-          <div class="absolute bottom-10 right-10 w-48 h-48 border border-white rounded-full"></div>
-          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 border border-white rounded-full"></div>
-        </div>
-
+        <div class="absolute inset-0 opacity-10"><div class="absolute top-10 left-10 w-32 h-32 border border-white rounded-full"></div><div class="absolute bottom-10 right-10 w-48 h-48 border border-white rounded-full"></div></div>
         <div class="relative grid lg:grid-cols-2 gap-12 p-10 lg:p-16">
           <div>
             <h2 class="text-3xl lg:text-4xl font-semibold tracking-tight text-white mb-4">Siap Meraih Prestasi Terbaikmu?</h2>
-            <p class="text-stone-400 leading-relaxed mb-6">Daftar sekarang dan dapatkan kelas trial gratis, modul belajar eksklusif, serta konsultasi akademik dengan mentor kami.</p>
-
-            <!-- Domain badge in CTA -->
-            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
-              <i data-lucide="globe" class="w-4 h-4 text-orange-400"></i>
-              <span class="domain-shimmer text-sm font-semibold tracking-wide">www.bimbelALPHA.id</span>
-            </div>
-
+            <p class="text-stone-400 leading-relaxed mb-6">Daftar sekarang dan dapatkan kelas trial gratis bersama mentor yang sudah 20 tahun membimbing siswa sukses.</p>
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8"><i data-lucide="globe" class="w-4 h-4 text-orange-400"></i><span class="domain-shimmer text-sm font-semibold tracking-wide">bimbelalpha.github.io/bimbelALPHA</span></div>
             <div class="space-y-4">
-              <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-                </div>
-                <span class="text-sm text-stone-300">1 sesi kelas trial gratis</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-                </div>
-                <span class="text-sm text-stone-300">Modul belajar lengkap & terstruktur</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-                </div>
-                <span class="text-sm text-stone-300">Konsultasi akademik langsung dengan mentor</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-                </div>
-                <span class="text-sm text-stone-300">Opsi cicilan 0% tanpa bunga</span>
-              </div>
+              <div class="flex items-center gap-3"><div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i></div><span class="text-sm text-stone-300">1 sesi kelas trial gratis</span></div>
+              <div class="flex items-center gap-3"><div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i></div><span class="text-sm text-stone-300">2 mentor berpengalaman 20 tahun</span></div>
+              <div class="flex items-center gap-3"><div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i></div><span class="text-sm text-stone-300">Modul belajar lengkap & terstruktur</span></div>
+              <div class="flex items-center gap-3"><div class="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i></div><span class="text-sm text-stone-300">Opsi cicilan 0% tanpa bunga</span></div>
             </div>
           </div>
-
-          <!-- Form -->
           <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-2xl">
             <h3 class="text-lg font-semibold text-stone-900 mb-1">Formulir Pendaftaran</h3>
             <p class="text-sm text-stone-400 mb-6">Isi data di bawah ini, kami akan menghubungimu dalam 1x24 jam.</p>
-
             <form id="daftarForm" onsubmit="handleSubmit(event)" class="space-y-4">
-              <div>
-                <label class="block text-xs font-medium text-stone-600 mb-1.5">Nama Lengkap</label>
-                <input type="text" required placeholder="Masukkan nama lengkap" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all duration-150">
-              </div>
-              <div>
-                <label class="block text-xs font-medium text-stone-600 mb-1.5">No. WhatsApp</label>
-                <input type="tel" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all duration-150">
-              </div>
-              <div>
-                <label class="block text-xs font-medium text-stone-600 mb-1.5">Email</label>
-                <input type="email" required placeholder="email@contoh.com" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all duration-150">
-              </div>
-              <div>
-                <label class="block text-xs font-medium text-stone-600 mb-1.5">Jenjang Pendidikan</label>
-                <select required class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all duration-150 appearance-none cursor-pointer">
-                  <option value="" disabled selected>Pilih jenjang</option>
-                  <option>Kelas SD (1–6)</option>
-                  <option>Kelas SMP (7–9)</option>
-                  <option>Kelas SMA (10–12)</option>
-                  <option>Program UTBK/SBMPTN</option>
-                  <option>Kelas Online</option>
-                  <option>Private / Tutor</option>
-                </select>
-              </div>
-              <div>
-                <label class="block text-xs font-medium text-stone-600 mb-1.5">Pesan (Opsional)</label>
-                <textarea rows="3" placeholder="Tulis pesan atau pertanyaan..." class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all duration-150 resize-none"></textarea>
-              </div>
-
-              <button type="submit" id="submitBtn" class="w-full py-3 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors duration-150 shadow-lg shadow-stone-900/10 flex items-center justify-center gap-2">
-                <span id="submitText">Kirim Pendaftaran</span>
-                <i data-lucide="send" class="w-4 h-4" id="submitIcon"></i>
-                <svg id="submitSpinner" class="hidden w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="opacity-25"></circle><path d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" fill="currentColor" class="opacity-75"></path></svg>
-              </button>
+              <div><label class="block text-xs font-medium text-stone-600 mb-1.5">Nama Lengkap</label><input type="text" required placeholder="Masukkan nama lengkap" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all"></div>
+              <div><label class="block text-xs font-medium text-stone-600 mb-1.5">No. WhatsApp</label><input type="tel" required placeholder="08xxxxxxxxxx" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all"></div>
+              <div><label class="block text-xs font-medium text-stone-600 mb-1.5">Email</label><input type="email" required placeholder="email@contoh.com" class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all"></div>
+              <div><label class="block text-xs font-medium text-stone-600 mb-1.5">Jenjang Pendidikan</label><select required class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all appearance-none cursor-pointer"><option value="" disabled selected>Pilih jenjang</option><option>Kelas SD (1–6)</option><option>Kelas SMP (7–9)</option><option>Kelas SMA (10–12)</option><option>Program UTBK/SBMPTN</option><option>Kelas Online</option><option>Private / Tutor</option></select></div>
+              <div><label class="block text-xs font-medium text-stone-600 mb-1.5">Pesan (Opsional)</label><textarea rows="3" placeholder="Tulis pesan atau pertanyaan..." class="w-full px-4 py-2.5 bg-stone-50 border border-stone-200 rounded-lg text-sm text-stone-800 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-orange-200 focus:border-orange-300 transition-all resize-none"></textarea></div>
+              <button type="submit" id="submitBtn" class="w-full py-3 bg-stone-900 text-white text-sm font-medium rounded-full hover:bg-stone-800 transition-colors shadow-lg shadow-stone-900/10 flex items-center justify-center gap-2"><span id="submitText">Kirim Pendaftaran</span><i data-lucide="send" class="w-4 h-4" id="submitIcon"></i><svg id="submitSpinner" class="hidden w-4 h-4 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" stroke-linecap="round" class="opacity-25"></circle><path d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" fill="currentColor" class="opacity-75"></path></svg></button>
             </form>
-
             <div id="successMessage" class="hidden text-center py-8">
-              <div class="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i data-lucide="check-circle" class="w-8 h-8 text-emerald-500"></i>
-              </div>
+              <div class="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="check-circle" class="w-8 h-8 text-emerald-500"></i></div>
               <h4 class="text-lg font-semibold text-stone-900 mb-1">Pendaftaran Berhasil!</h4>
-              <p class="text-sm text-stone-500">Tim kami akan menghubungimu melalui WhatsApp dalam 1x24 jam.</p>
-              <div class="mt-4 inline-flex items-center gap-1.5 text-xs text-stone-400">
-                <i data-lucide="globe" class="w-3 h-3"></i>
-                www.bimbelALPHA.id
-              </div>
+              <p class="text-sm text-stone-500 mb-2">Tim kami akan menghubungimu melalui WhatsApp dalam 1x24 jam.</p>
+              <a href="tel:081534832006" class="inline-flex items-center gap-1.5 text-sm text-orange-700 font-medium hover:text-orange-800 transition-colors"><i data-lucide="phone" class="w-4 h-4"></i> 081534832006</a>
             </div>
           </div>
         </div>
@@ -841,268 +383,111 @@
   </section>
 
 
-  <!-- ============================================= -->
+  <!-- LOKASI -->
+  <section class="py-24 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-orange-50 border border-orange-100 rounded-full mb-4"><span class="text-xs font-medium text-orange-800">Lokasi Kami</span></div>
+        <h2 class="text-3xl font-semibold tracking-tight text-stone-900 mb-4">Kunjungi Kampus ALPHA</h2>
+        <p class="text-stone-500 leading-relaxed">Datang langsung atau hubungi kami untuk penjemputan di area Cipondoh dan sekitarnya.</p>
+      </div>
+      <div class="grid lg:grid-cols-5 gap-6">
+        <div class="lg:col-span-3 rounded-2xl overflow-hidden border border-stone-200/60 shadow-sm h-[350px] lg:h-[420px]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d106.63!3d-6.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTAnMTIuMCJTIDEwNsKwMzcnNDguMCJF!5e0!3m2!1sid!2sid!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grayscale contrast-[1.1]"></iframe>
+        </div>
+        <div class="lg:col-span-2 space-y-4">
+          <div class="bg-[#fafaf9] border border-stone-200/60 rounded-xl p-5"><div class="flex items-start gap-4"><div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" class="w-5 h-5 text-orange-600"></i></div><div><h3 class="text-sm font-semibold text-stone-900 mb-1">Alamat</h3><p class="text-sm text-stone-500 leading-relaxed">Jl. Pulo Indah Permai VI No 182, Petir, Cipondoh, Tangerang</p></div></div></div>
+          <div class="bg-[#fafaf9] border border-stone-200/60 rounded-xl p-5"><div class="flex items-start gap-4"><div class="w-10 h-10 bg-emerald-50 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="phone" class="w-5 h-5 text-emerald-600"></i></div><div><h3 class="text-sm font-semibold text-stone-900 mb-1">Telepon / WhatsApp</h3><a href="tel:081534832006" class="text-sm text-orange-700 hover:text-orange-800 font-medium transition-colors">081534832006</a></div></div></div>
+          <div class="bg-[#fafaf9] border border-stone-200/60 rounded-xl p-5"><div class="flex items-start gap-4"><div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="mail" class="w-5 h-5 text-blue-600"></i></div><div><h3 class="text-sm font-semibold text-stone-900 mb-1">Email</h3><a href="mailto:info@bimbelalpha.id" class="text-sm text-stone-500 hover:text-orange-700 transition-colors">info@bimbelalpha.id</a></div></div></div>
+          <div class="bg-[#fafaf9] border border-stone-200/60 rounded-xl p-5"><div class="flex items-start gap-4"><div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="clock" class="w-5 h-5 text-purple-600"></i></div><div><h3 class="text-sm font-semibold text-stone-900 mb-1">Jam Operasional</h3><p class="text-sm text-stone-500">Senin – Sabtu: 09.00 – 21.00</p><p class="text-xs text-stone-400 mt-0.5">Minggu: 10.00 – 16.00 (khusus private)</p></div></div></div>
+          <a href="https://wa.me/6281534832006?text=Halo%20ALPHA%2C%20saya%20ingin%20berkunjung%20ke%20kampus%20di%20Cipondoh" target="_blank" class="flex items-center justify-center gap-2 w-full py-3 bg-emerald-600 text-white text-sm font-medium rounded-full hover:bg-emerald-700 transition-colors shadow-lg shadow-emerald-600/20"><i data-lucide="navigation" class="w-4 h-4"></i>Minta Petunjuk Arah via WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- FOOTER -->
-  <!-- ============================================= -->
   <footer class="bg-stone-900 text-stone-400 pt-16 pb-8 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-
-        <!-- Brand -->
-        <div class="lg:col-span-1">
-          <a href="#" class="flex items-center gap-2.5 mb-4">
-            <div class="w-9 h-9 bg-white rounded-xl flex items-center justify-center">
-              <span class="text-stone-900 font-semibold text-sm">A</span>
-            </div>
-            <div class="flex flex-col">
-              <span class="text-lg font-semibold text-white tracking-tight leading-tight">ALPHA</span>
-              <span class="text-[10px] text-stone-500 leading-tight">Bimbingan Belajar</span>
-            </div>
-          </a>
-          <p class="text-sm leading-relaxed mb-4">Bimbingan belajar terdepan yang membantu siswa meraih prestasi terbaik melalui metode belajar terstruktur dan mentor berkualitas.</p>
-
-          <!-- Domain in footer -->
-          <a href="#" class="inline-flex items-center gap-2 bg-stone-800 hover:bg-stone-700 border border-stone-700 rounded-lg px-3.5 py-2 transition-colors duration-150 mb-5">
-            <i data-lucide="globe" class="w-4 h-4 text-orange-400"></i>
-            <span class="text-sm font-medium text-orange-300">www.bimbelALPHA.id</span>
-          </a>
-
+        <div>
+          <a href="https://bimbelalpha.github.io/bimbelALPHA/" class="flex items-center gap-2.5 mb-4"><div class="w-9 h-9 bg-white rounded-xl flex items-center justify-center"><span class="text-stone-900 font-semibold text-sm">A</span></div><div class="flex flex-col"><span class="text-lg font-semibold text-white tracking-tight leading-tight">ALPHA</span><span class="text-[10px] text-stone-500 leading-tight">Bimbingan Belajar</span></div></a>
+          <p class="text-sm leading-relaxed mb-4">Didirikan oleh <strong class="text-stone-300">Robertus Dwiyatmoko Priyogo</strong> & <strong class="text-stone-300">Yohana Fransiska Kuswarini</strong> — masing-masing dengan 20 tahun pengalaman membimbing siswa sukses.</p>
+          <a href="https://bimbelalpha.github.io/bimbelALPHA/" class="inline-flex items-center gap-2 bg-stone-800 hover:bg-stone-700 border border-stone-700 rounded-lg px-3.5 py-2 transition-colors mb-5"><i data-lucide="globe" class="w-4 h-4 text-orange-400"></i><span class="text-sm font-medium text-orange-300">bimbelalpha.github.io/bimbelALPHA</span></a>
           <div class="flex items-center gap-3">
-            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors duration-150">
-              <i data-lucide="instagram" class="w-4 h-4 text-stone-300"></i>
-            </a>
-            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors duration-150">
-              <i data-lucide="youtube" class="w-4 h-4 text-stone-300"></i>
-            </a>
-            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors duration-150">
-              <i data-lucide="message-circle" class="w-4 h-4 text-stone-300"></i>
-            </a>
-            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors duration-150">
-              <i data-lucide="facebook" class="w-4 h-4 text-stone-300"></i>
-            </a>
+            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors"><i data-lucide="instagram" class="w-4 h-4 text-stone-300"></i></a>
+            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors"><i data-lucide="youtube" class="w-4 h-4 text-stone-300"></i></a>
+            <a href="https://wa.me/6281534832006" target="_blank" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors"><i data-lucide="message-circle" class="w-4 h-4 text-stone-300"></i></a>
+            <a href="#" class="w-9 h-9 bg-stone-800 rounded-lg flex items-center justify-center hover:bg-stone-700 transition-colors"><i data-lucide="facebook" class="w-4 h-4 text-stone-300"></i></a>
           </div>
         </div>
-
-        <!-- Program -->
-        <div>
-          <h4 class="text-sm font-semibold text-white mb-4">Program</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Kelas SD</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Kelas SMP</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Kelas SMA</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">UTBK/SBMPTN</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Kelas Online</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Private / Tutor</a></li>
-          </ul>
-        </div>
-
-        <!-- Perusahaan -->
-        <div>
-          <h4 class="text-sm font-semibold text-white mb-4">Perusahaan</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Tentang Kami</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Karir</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Blog</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Syarat & Ketentuan</a></li>
-            <li><a href="#" class="text-sm hover:text-orange-300 transition-colors duration-150">Kebijakan Privasi</a></li>
-          </ul>
-        </div>
-
-        <!-- Kontak -->
-        <div>
-          <h4 class="text-sm font-semibold text-white mb-4">Kontak</h4>
-          <ul class="space-y-3">
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-stone-500 flex-shrink-0"></i>
-              <span class="text-sm">Jl. Pendidikan No. 45, Jakarta Selatan 12345</span>
-            </li>
-            <li class="flex items-center gap-2.5">
-              <i data-lucide="phone" class="w-4 h-4 text-stone-500 flex-shrink-0"></i>
-              <span class="text-sm">0812-3456-7890</span>
-            </li>
-            <li class="flex items-center gap-2.5">
-              <i data-lucide="mail" class="w-4 h-4 text-stone-500 flex-shrink-0"></i>
-              <span class="text-sm">info@bimbelalpha.id</span>
-            </li>
-            <li class="flex items-center gap-2.5">
-              <i data-lucide="globe" class="w-4 h-4 text-stone-500 flex-shrink-0"></i>
-              <a href="#" class="text-sm text-orange-300 hover:text-orange-200 transition-colors duration-150">www.bimbelALPHA.id</a>
-            </li>
-            <li class="flex items-center gap-2.5">
-              <i data-lucide="clock" class="w-4 h-4 text-stone-500 flex-shrink-0"></i>
-              <span class="text-sm">Sen – Sab: 09.00 – 21.00</span>
-            </li>
-          </ul>
-        </div>
-
+        <div><h4 class="text-sm font-semibold text-white mb-4">Program</h4><ul class="space-y-2.5"><li><a href="#program" class="text-sm hover:text-orange-300 transition-colors">Kelas SD</a></li><li><a href="#program" class="text-sm hover:text-orange-300 transition-colors">Kelas SMP</a></li><li><a href="#program" class="text-sm hover:text-orange-300 transition-colors">Kelas SMA</a></li><li><a href="#program" class="text-sm hover:text-orange-300 transition-colors">UTBK/SBMPTN</a></li><li><a href="#program" class="text-sm hover:text-orange-300 transition-colors">Kelas Online</a></li><li><a href="#program" class="text-sm hover:text-orange-300 transition-colors">Private / Tutor</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white mb-4">Perusahaan</h4><ul class="space-y-2.5"><li><a href="#" class="text-sm hover:text-orange-300 transition-colors">Tentang Kami</a></li><li><a href="#" class="text-sm hover:text-orange-300 transition-colors">Karir</a></li><li><a href="#" class="text-sm hover:text-orange-300 transition-colors">Blog</a></li><li><a href="#" class="text-sm hover:text-orange-300 transition-colors">Syarat & Ketentuan</a></li><li><a href="#" class="text-sm hover:text-orange-300 transition-colors">Kebijakan Privasi</a></li></ul></div>
+        <div><h4 class="text-sm font-semibold text-white mb-4">Kontak</h4><ul class="space-y-3">
+          <li class="flex items-start gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-stone-500 flex-shrink-0"></i><span class="text-sm">Jl. Pulo Indah Permai VI No 182, Petir, Cipondoh, Tangerang</span></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="phone" class="w-4 h-4 text-stone-500 flex-shrink-0"></i><a href="tel:081534832006" class="text-sm text-orange-300 hover:text-orange-200 transition-colors">081534832006</a></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-stone-500 flex-shrink-0"></i><a href="mailto:info@bimbelalpha.id" class="text-sm hover:text-orange-300 transition-colors">info@bimbelalpha.id</a></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="globe" class="w-4 h-4 text-stone-500 flex-shrink-0"></i><a href="https://bimbelalpha.github.io/bimbelALPHA/" class="text-sm text-orange-300 hover:text-orange-200 transition-colors">bimbelalpha.github.io/bimbelALPHA</a></li>
+          <li class="flex items-center gap-2.5"><i data-lucide="clock" class="w-4 h-4 text-stone-500 flex-shrink-0"></i><span class="text-sm">Sen – Sab: 09.00 – 21.00</span></li>
+        </ul></div>
       </div>
-
-      <!-- Bottom -->
       <div class="pt-8 border-t border-stone-800 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-xs text-stone-500">© 2025 Bimbel ALPHA — <a href="#" class="text-orange-400 hover:text-orange-300 transition-colors duration-150">www.bimbelALPHA.id</a>. Seluruh hak cipta dilindungi.</p>
+        <p class="text-xs text-stone-500">© 2025 Bimbel ALPHA oleh Robertus Dwiyatmoko Priyogo & Yohana Fransiska Kuswarini. Seluruh hak cipta dilindungi.</p>
         <p class="text-xs text-stone-500">Dibuat dengan <span class="text-orange-500">♥</span> untuk pendidikan Indonesia</p>
       </div>
     </div>
   </footer>
 
 
-  <!-- ============================================= -->
-  <!-- WHATSAPP FLOATING BUTTON -->
-  <!-- ============================================= -->
-  <a href="https://wa.me/6281234567890?text=Halo%20ALPHA%2C%20saya%20menemukan%20website%20ini%20dari%20www.bimbelALPHA.id%20dan%20ingin%20bertanya%20tentang%20program%20bimbel" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/30 transition-all duration-150 hover:scale-110 group">
-    <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
-    <!-- Tooltip -->
-    <div class="absolute right-16 bg-white text-stone-700 text-xs font-medium px-3 py-2 rounded-lg shadow-lg border border-stone-200 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
-      Chat via WhatsApp
-    </div>
-  </a>
+  <!-- WHATSAPP FLOATING -->
+  <a href="https://wa.me/6281534832006?text=Halo%20ALPHA%2C%20saya%20menemukan%20website%20ini%20dari%20https%3A%2F%2Fbimbelalpha.github.io%2FbimbelALPHA%2F%20dan%20ingin%20bertanya" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 hover:bg-emerald-600 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/30 transition-all hover:scale-110 group"><i data-lucide="message-circle" class="w-6 h-6 text-white"></i><div class="absolute right-16 bg-white text-stone-700 text-xs font-medium px-3 py-2 rounded-lg shadow-lg border border-stone-200 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Chat: 081534832006</div></a>
 
 
-  <!-- ============================================= -->
-  <!-- TOAST NOTIFICATION -->
-  <!-- ============================================= -->
-  <div id="toast" class="fixed top-20 right-6 z-50 hidden">
-    <div class="bg-white border border-stone-200 rounded-xl px-5 py-3 shadow-xl flex items-center gap-3">
-      <div class="w-8 h-8 bg-emerald-50 rounded-lg flex items-center justify-center">
-        <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
-      </div>
-      <div>
-        <p class="text-sm font-medium text-stone-900" id="toastTitle">Berhasil!</p>
-        <p class="text-xs text-stone-400" id="toastMessage">Aksi berhasil dilakukan.</p>
-      </div>
-    </div>
-  </div>
+  <!-- TOAST -->
+  <div id="toast" class="fixed top-20 right-6 z-50 hidden"><div class="bg-white border border-stone-200 rounded-xl px-5 py-3 shadow-xl flex items-center gap-3"><div class="w-8 h-8 bg-emerald-50 rounded-lg flex items-center justify-center"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i></div><div><p class="text-sm font-medium text-stone-900" id="toastTitle">Berhasil!</p><p class="text-xs text-stone-400" id="toastMessage">Aksi berhasil dilakukan.</p></div></div></div>
 
 
-  <!-- ============================================= -->
-  <!-- JAVASCRIPT -->
-  <!-- ============================================= -->
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
-
-    // ---- Mobile Menu Toggle ----
     const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
-    let menuOpen = false;
-
-    menuToggle.addEventListener('click', () => {
-      menuOpen = !menuOpen;
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuOpen = false;
-      });
-    });
-
-    // ---- Navbar scroll effect ----
+    menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('shadow-sm');
-      } else {
-        navbar.classList.remove('shadow-sm');
-      }
-    });
-
-    // ---- FAQ Toggle ----
-    function toggleFaq(button) {
-      const item = button.closest('.faq-item');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('shadow-sm', window.scrollY > 50); });
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
       const content = item.querySelector('.faq-content');
-      const icon = button.querySelector('.faq-icon');
-      const isOpen = !content.classList.contains('hidden');
-
-      document.querySelectorAll('.faq-item').forEach(otherItem => {
-        if (otherItem !== item) {
-          otherItem.querySelector('.faq-content').classList.add('hidden');
-          otherItem.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
-        }
-      });
-
-      if (isOpen) {
-        content.classList.add('hidden');
-        icon.style.transform = 'rotate(0deg)';
-      } else {
-        content.classList.remove('hidden');
-        icon.style.transform = 'rotate(180deg)';
-      }
+      const icon = btn.querySelector('.faq-icon');
+      const open = !content.classList.contains('hidden');
+      document.querySelectorAll('.faq-item').forEach(o => { if (o !== item) { o.querySelector('.faq-content').classList.add('hidden'); o.querySelector('.faq-icon').style.transform = 'rotate(0deg)'; } });
+      content.classList.toggle('hidden', open);
+      icon.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
     }
-
-    // ---- Form Submission ----
-    function handleSubmit(event) {
-      event.preventDefault();
-      const form = document.getElementById('daftarForm');
-      const submitBtn = document.getElementById('submitBtn');
-      const submitText = document.getElementById('submitText');
-      const submitIcon = document.getElementById('submitIcon');
-      const submitSpinner = document.getElementById('submitSpinner');
-      const successMessage = document.getElementById('successMessage');
-
-      submitText.textContent = 'Mengirim...';
-      submitIcon.classList.add('hidden');
-      submitSpinner.classList.remove('hidden');
-      submitBtn.disabled = true;
-      submitBtn.classList.add('opacity-70');
-
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('submitText').textContent = 'Mengirim...';
+      document.getElementById('submitIcon').classList.add('hidden');
+      document.getElementById('submitSpinner').classList.remove('hidden');
+      document.getElementById('submitBtn').disabled = true;
+      document.getElementById('submitBtn').classList.add('opacity-70');
       setTimeout(() => {
-        form.classList.add('hidden');
-        successMessage.classList.remove('hidden');
+        document.getElementById('daftarForm').classList.add('hidden');
+        document.getElementById('successMessage').classList.remove('hidden');
         lucide.createIcons();
-        showToast('Pendaftaran Terkirim!', 'Kami akan segera menghubungi Anda.');
+        showToast('Pendaftaran Terkirim!', 'Kami akan menghubungi Anda via WhatsApp.');
       }, 2000);
     }
-
-    // ---- Toast Notification ----
-    function showToast(title, message) {
-      const toast = document.getElementById('toast');
-      const toastTitle = document.getElementById('toastTitle');
-      const toastMessage = document.getElementById('toastMessage');
-
-      toastTitle.textContent = title;
-      toastMessage.textContent = message;
-      toast.classList.remove('hidden');
-
-      toast.style.opacity = '0';
-      toast.style.transform = 'translateX(20px)';
-      toast.style.transition = 'all 0.3s ease';
-      requestAnimationFrame(() => {
-        toast.style.opacity = '1';
-        toast.style.transform = 'translateX(0)';
-      });
-
-      setTimeout(() => {
-        toast.style.opacity = '0';
-        toast.style.transform = 'translateX(20px)';
-        setTimeout(() => {
-          toast.classList.add('hidden');
-        }, 300);
-      }, 4000);
+    function showToast(title, msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = msg;
+      t.classList.remove('hidden');
+      t.style.cssText = 'opacity:0;transform:translateX(20px);transition:all 0.3s ease';
+      requestAnimationFrame(() => { t.style.opacity = '1'; t.style.transform = 'translateX(0)'; });
+      setTimeout(() => { t.style.opacity = '0'; t.style.transform = 'translateX(20px)'; setTimeout(() => t.classList.add('hidden'), 300); }, 4000);
     }
-
-    // ---- Scroll Animation ----
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-up');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('section > div > .text-center, .faq-item').forEach(el => {
-      if (!el.classList.contains('animate-fade-up')) {
-        el.style.opacity = '0';
-        observer.observe(el);
-      }
-    });
   </script>
 
 </body>
